@@ -37,7 +37,33 @@ public class CSharpUsingNamespaceBuilder extends CSharpBuilderBase {
         map.put("outsidesql", "OutsideSql");
         map.put("twowaysql", "TwoWaySql");
         map.put("system", "DfSystem");
+        map.put("exception", "DfException");
         _toCapCamelWordMap = Collections.unmodifiableMap(map);
+    }
+
+    protected static final Map<String, String> _exceptionUsingMap;
+    static {
+        Map<String, String> map = DfCollectionUtil.newLinkedHashMap();
+        map.put("NumberFormatException", "NumberFormatException = System.FormatException");
+        map.put("InstantiationException", "InstantiationException = System.TypeLoadException");
+        map.put("IllegalAccessException", "IllegalAccessException = System.SecurityException");
+        map.put("NoSuchMethodException", "NoSuchMethodException = System.MissingMethodException");
+        map.put("RuntimeException", "RuntimeException = System.Exception");
+        map.put("ClassCastException", "ClassCastException = System.InvalidCastException");
+        map.put("Throwable", "Throwable = System.Exception");
+        map.put("InterruptedException", "InterruptedException = System.Threading.ThreadInterruptedException");
+        map.put("IndexOutOfBoundsException", "IndexOutOfBoundsException = System.IndexOutOfRangeException");
+        map.put("InvocationTargetException", "InvocationTargetException = System.Reflection.TargetInvocationException");
+        map.put("ClassNotFoundException", "ClassNotFoundException = System.TypeLoadException");
+        map.put("Exception", "Exception = System.Exception");
+        map.put("SecurityException", "SecurityException = System.Security.SecurityException");
+        map.put("ParseException", "ParseException = System.FormatException");
+        map.put("ExecutionException", "ExecutionException = System.Threading.ThreadStartException");
+        map.put("SQLException", "SQLException = System.Data.Common.DbException");
+        map.put("IOException", "IOException = System.IO.IOException");
+        map.put("FileNotFoundException", "FileNotFoundException = System.IO.FileNotFoundException");
+        map.put("UnsupportedEncodingException", "UnsupportedEncodingException = System.ArgumentException");
+        _exceptionUsingMap = Collections.unmodifiableMap(map);
     }
 
     // ===================================================================================
@@ -53,6 +79,7 @@ public class CSharpUsingNamespaceBuilder extends CSharpBuilderBase {
     public void buildUsingString(StringBuilder sb) {
         doBuildDefaultUsingClause(sb);
         doBuildMappingUsingClause(sb);
+        doBuildMappingExceptionUsingClause(sb);
     }
 
     protected void doBuildDefaultUsingClause(StringBuilder sb) {
@@ -78,6 +105,9 @@ public class CSharpUsingNamespaceBuilder extends CSharpBuilderBase {
             if (work.startsWith("dbflute.system")) {
                 work = replace(work, "dbflute.system.", "dbflute.dfSystem.");
             }
+            if (work.startsWith("dbflute.exception")) {
+                work = replace(work, "dbflute.exception.", "dbflute.dfException.");
+            }
             // remove class name and inner class name,
             // and convert to upper tokens
             work = toUpperDotString(removeUpperToken(work));
@@ -86,6 +116,21 @@ public class CSharpUsingNamespaceBuilder extends CSharpBuilderBase {
             }
             uniqueImportSet.add(work);
             sb.append("using ").append(work).append(";").append(ln());
+        }
+    }
+
+    protected void doBuildMappingExceptionUsingClause(StringBuilder sb) {
+        Set<String> uniqueImportSet = new HashSet<String>();
+        for (String exceptionClass : _javaInfo.getCatchExceptionList()) {
+            String work = exceptionClass;
+            if (uniqueImportSet.contains(work)) {
+                continue;
+            }
+            uniqueImportSet.add(work);
+            if (!_exceptionUsingMap.containsKey(work)) {
+                continue;
+            }
+            sb.append("using ").append(_exceptionUsingMap.get(work)).append(";").append(ln());
         }
     }
 

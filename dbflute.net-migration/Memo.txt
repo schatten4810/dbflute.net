@@ -85,6 +85,8 @@ java.text.ParseException -> ParseException = System.FormatException
 java.util.concurrent.ExecutionException -> ExecutionException = System.Threading.ThreadStartException
 
 java.sql.SQLException -> SQLException = System.Data.SqlClient.SqlException
+  -> SQLException = System.Data.Common.DbException
+　　※SqlExceptionはSQLServer用のため親クラスのDbExceptionの方を対象
 
 java.io.IOException -> System.IO.IOException
 java.io.FileNotFoundException -> System.IO.FileNotFoundException
@@ -96,3 +98,6 @@ java.io.UnsupportedEncodingException = UnsupportedEncodingException -> System.Ar
 #                                                         その他
 #                                                         ------
 org.apache下の変換クラスはどこに置くか
+
+System.Data.Common.DbDataAdapter (IDbDataAdapter : DataSource のようなもの？)
+System.Data.IDbCommand (PrepareStatmentのようなもの？)

@@ -28,6 +28,7 @@ public class JavaAnalyzer {
     protected final List<String> _importList = DfCollectionUtil.newArrayList();
     protected final List<String> _classCommentList = DfCollectionUtil.newArrayList();
     protected final List<String> _classElementList = DfCollectionUtil.newArrayList();
+    protected final List<String> _catchExceptionList = DfCollectionUtil.newArrayList();
 
     // ===================================================================================
     //                                                                        Analyze Line
@@ -58,9 +59,11 @@ public class JavaAnalyzer {
             _classElementArea = true;
         } else if (_classElementArea) {
             _classElementList.add(line);
-        } else if (_classElementArea && line.startsWith("}")) {
-            _classElementList.add(line);
-            _classElementArea = false;
+            if (line.startsWith("}")) {
+                _classElementArea = false;
+            } else if (Srl.contains(line, "} catch (")) {
+                _catchExceptionList.add(Srl.substringFirstFront(Srl.substringLastFront(Srl.substringFirstRear(line, "("),")")," "));
+            }
         }
     }
 
@@ -89,5 +92,9 @@ public class JavaAnalyzer {
 
     public List<String> getClassElementList() {
         return _classElementList;
+    }
+
+    public List<String> getCatchExceptionList() {
+        return _catchExceptionList;
     }
 }

@@ -41,4 +41,8 @@ public class JavaInfo {
     public List<String> getClassElementList() {
         return _analyzer.getClassElementList();
     }
+
+    public List<String> getCatchExceptionList() {
+        return _analyzer.getCatchExceptionList();
+    }
 }
