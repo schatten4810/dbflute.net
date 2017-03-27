@@ -13,7 +13,7 @@
 	<inceptionYear>2006</inceptionYear>
 
 	<properties>
-		<dbflute.version>1.1.0-sp1-RC2</dbflute.version>
+		<dbflute.version>1.1.2</dbflute.version>
 		<utflute.version>0.5.0</utflute.version>
 	</properties>
 
@@ -159,6 +159,14 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.7</version>
 			<scope>runtime</scope>
+		</dependency>
+
+		<!-- logging -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.0.4</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
