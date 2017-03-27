@@ -17,6 +17,8 @@ using DBFlute.JavaLike.Lang;
 using DBFlute.JavaLike.Time;
 using DBFlute.JavaLike.Util;
 
+using Throwable = System.Exception;
+
 namespace DBFlute.DfException {
 
 /**

@@ -17,6 +17,11 @@ using DBFlute.JavaLike.Lang;
 using DBFlute.JavaLike.Time;
 using DBFlute.JavaLike.Util;
 
+//using RuntimeException = System.ApplicationException;
+//using Throwable = System.Exception;
+using RuntimeException = System.Exception;
+using SQLException = System.Data.Common.DbException
+
 namespace DBFlute.DfException {
 
 /**
