@@ -33,8 +33,9 @@ public class ScalarSelectValueNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ScalarSelectValueNotFoundException(String msg) {
-        super(msg);
+    public ScalarSelectValueNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class ScalarSelectValueNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ScalarSelectValueNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ScalarSelectValueNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

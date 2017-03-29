@@ -32,8 +32,9 @@ public class NonQueryUpdateNotAllowedException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public NonQueryUpdateNotAllowedException(String msg) {
-        super(msg);
+    public NonQueryUpdateNotAllowedException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class NonQueryUpdateNotAllowedException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public NonQueryUpdateNotAllowedException(String msg, Throwable cause) {
-        super(msg, cause);
+    public NonQueryUpdateNotAllowedException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

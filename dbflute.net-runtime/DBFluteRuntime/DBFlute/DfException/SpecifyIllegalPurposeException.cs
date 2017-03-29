@@ -32,8 +32,9 @@ public class SpecifyIllegalPurposeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyIllegalPurposeException(String msg) {
-        super(msg);
+    public SpecifyIllegalPurposeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyIllegalPurposeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyIllegalPurposeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyIllegalPurposeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

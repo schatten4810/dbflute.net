@@ -32,8 +32,9 @@ public class QueryDerivedReferrerSelectAllPossibleException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public QueryDerivedReferrerSelectAllPossibleException(String msg) {
-        super(msg);
+    public QueryDerivedReferrerSelectAllPossibleException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class QueryDerivedReferrerSelectAllPossibleException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public QueryDerivedReferrerSelectAllPossibleException(String msg, Throwable cause) {
-        super(msg, cause);
+    public QueryDerivedReferrerSelectAllPossibleException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

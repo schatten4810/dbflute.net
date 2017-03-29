@@ -32,8 +32,9 @@ public class RelationEntityNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public RelationEntityNotFoundException(String msg) {
-        super(msg);
+    public RelationEntityNotFoundException(String msg)
+        : base(msg)
+    {
     }
 }
 

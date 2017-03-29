@@ -32,8 +32,9 @@ public class QueryDerivedReferrerInvalidColumnSpecificationException : RuntimeEx
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public QueryDerivedReferrerInvalidColumnSpecificationException(String msg) {
-        super(msg);
+    public QueryDerivedReferrerInvalidColumnSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class QueryDerivedReferrerInvalidColumnSpecificationException : RuntimeEx
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public QueryDerivedReferrerInvalidColumnSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public QueryDerivedReferrerInvalidColumnSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

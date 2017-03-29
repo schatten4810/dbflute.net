@@ -28,12 +28,14 @@ namespace DBFlute.DfException {
  */
 public class DfPropFileReadFailureException : RuntimeException {
 
-    public DfPropFileReadFailureException(String msg) {
-        super(msg);
+    public DfPropFileReadFailureException(String msg)
+        : base(msg)
+    {
     }
 
-    public DfPropFileReadFailureException(String msg, Throwable e) {
-        super(msg, e);
+    public DfPropFileReadFailureException(String msg, Throwable e)
+        : base(msg, e)
+    {
     }
 }
 

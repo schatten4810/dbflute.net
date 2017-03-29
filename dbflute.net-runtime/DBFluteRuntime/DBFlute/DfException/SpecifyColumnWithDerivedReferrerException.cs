@@ -32,8 +32,9 @@ public class SpecifyColumnWithDerivedReferrerException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyColumnWithDerivedReferrerException(String msg) {
-        super(msg);
+    public SpecifyColumnWithDerivedReferrerException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyColumnWithDerivedReferrerException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyColumnWithDerivedReferrerException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyColumnWithDerivedReferrerException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

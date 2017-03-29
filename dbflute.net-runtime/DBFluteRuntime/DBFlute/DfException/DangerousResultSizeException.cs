@@ -36,8 +36,9 @@ public class DangerousResultSizeException : RuntimeException {
      * @param msg The exception message. (NotNull)
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      */
-    public DangerousResultSizeException(String msg, int safetyMaxResultSize) {
-        super(msg);
+    public DangerousResultSizeException(String msg, int safetyMaxResultSize)
+        : base(msg)
+    {
         _safetyMaxResultSize = safetyMaxResultSize;
     }
 
@@ -47,8 +48,9 @@ public class DangerousResultSizeException : RuntimeException {
      * @param cause The exception as cause. (NullAllowed)
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      */
-    public DangerousResultSizeException(String msg, Throwable cause, int safetyMaxResultSize) {
-        super(msg, cause);
+    public DangerousResultSizeException(String msg, Throwable cause, int safetyMaxResultSize)
+        : base(msg, cause)
+    {
         _safetyMaxResultSize = safetyMaxResultSize;
     }
 

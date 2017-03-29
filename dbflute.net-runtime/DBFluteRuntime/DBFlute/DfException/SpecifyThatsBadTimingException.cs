@@ -33,8 +33,9 @@ public class SpecifyThatsBadTimingException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyThatsBadTimingException(String msg) {
-        super(msg);
+    public SpecifyThatsBadTimingException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class SpecifyThatsBadTimingException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyThatsBadTimingException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyThatsBadTimingException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

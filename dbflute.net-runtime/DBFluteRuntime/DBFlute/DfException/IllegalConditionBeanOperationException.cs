@@ -32,8 +32,9 @@ public class IllegalConditionBeanOperationException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public IllegalConditionBeanOperationException(String msg) {
-        super(msg);
+    public IllegalConditionBeanOperationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class IllegalConditionBeanOperationException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public IllegalConditionBeanOperationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public IllegalConditionBeanOperationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

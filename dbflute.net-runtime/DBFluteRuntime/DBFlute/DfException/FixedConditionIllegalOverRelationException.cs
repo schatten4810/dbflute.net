@@ -32,8 +32,9 @@ public class FixedConditionIllegalOverRelationException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public FixedConditionIllegalOverRelationException(String msg) {
-        super(msg);
+    public FixedConditionIllegalOverRelationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class FixedConditionIllegalOverRelationException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public FixedConditionIllegalOverRelationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public FixedConditionIllegalOverRelationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -33,8 +33,9 @@ public class SpecifyDerivedReferrerUnknownAliasNameException : RuntimeException 
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerUnknownAliasNameException(String msg) {
-        super(msg);
+    public SpecifyDerivedReferrerUnknownAliasNameException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class SpecifyDerivedReferrerUnknownAliasNameException : RuntimeException 
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerUnknownAliasNameException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyDerivedReferrerUnknownAliasNameException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

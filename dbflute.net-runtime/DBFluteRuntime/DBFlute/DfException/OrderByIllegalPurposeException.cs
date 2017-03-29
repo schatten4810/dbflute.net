@@ -32,8 +32,9 @@ public class OrderByIllegalPurposeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public OrderByIllegalPurposeException(String msg) {
-        super(msg);
+    public OrderByIllegalPurposeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class OrderByIllegalPurposeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public OrderByIllegalPurposeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public OrderByIllegalPurposeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

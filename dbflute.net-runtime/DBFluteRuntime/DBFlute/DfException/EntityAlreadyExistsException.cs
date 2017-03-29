@@ -17,7 +17,7 @@ using DBFlute.JavaLike.Lang;
 using DBFlute.JavaLike.Time;
 using DBFlute.JavaLike.Util;
 
-using SQLException = System.Data.Common.DbException
+using SQLException = System.Data.Common.DbException;
 
 namespace DBFlute.DfException {
 
@@ -32,8 +32,9 @@ public class EntityAlreadyExistsException : SQLFailureException, EntityBusinessE
      * @param msg The message of the exception. (NotNull)
      * @param cause SQLException. (NotNull)
      */
-    public EntityAlreadyExistsException(String msg, SQLException cause) {
-        super(msg, cause);
+    public EntityAlreadyExistsException(String msg, SQLException cause)
+        : base(msg, cause)
+    {
     }
 }
 

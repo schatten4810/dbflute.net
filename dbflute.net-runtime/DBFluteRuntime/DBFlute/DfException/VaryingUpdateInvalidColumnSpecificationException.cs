@@ -32,8 +32,9 @@ public class VaryingUpdateInvalidColumnSpecificationException : RuntimeException
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public VaryingUpdateInvalidColumnSpecificationException(String msg) {
-        super(msg);
+    public VaryingUpdateInvalidColumnSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class VaryingUpdateInvalidColumnSpecificationException : RuntimeException
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public VaryingUpdateInvalidColumnSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public VaryingUpdateInvalidColumnSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

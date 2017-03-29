@@ -39,8 +39,9 @@ public class PagingOverSafetySizeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      */
-    public PagingOverSafetySizeException(String msg, int safetyMaxResultSize) {
-        super(msg);
+    public PagingOverSafetySizeException(String msg, int safetyMaxResultSize)
+        : base(msg)
+    {
         this._safetyMaxResultSize = safetyMaxResultSize;
     }
 
@@ -50,8 +51,9 @@ public class PagingOverSafetySizeException : RuntimeException {
      * @param cause Throwable. (NullAllowed)
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      */
-    public PagingOverSafetySizeException(String msg, Throwable cause, int safetyMaxResultSize) {
-        super(msg, cause);
+    public PagingOverSafetySizeException(String msg, Throwable cause, int safetyMaxResultSize)
+        : base(msg, cause)
+    {
         this._safetyMaxResultSize = safetyMaxResultSize;
     }
 
@@ -61,8 +63,9 @@ public class PagingOverSafetySizeException : RuntimeException {
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      * @param allRecordCount The count of all records. (NotZero, ZotMinus, GraeterThanMaxSize)
      */
-    public PagingOverSafetySizeException(String msg, int safetyMaxResultSize, int allRecordCount) {
-        super(msg);
+    public PagingOverSafetySizeException(String msg, int safetyMaxResultSize, int allRecordCount)
+        : base(msg)
+    {
         this._safetyMaxResultSize = safetyMaxResultSize;
         this._allRecordCount = allRecordCount;
     }
@@ -74,8 +77,9 @@ public class PagingOverSafetySizeException : RuntimeException {
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      * @param allRecordCount The count of all records. (NotZero, ZotMinus, GraeterThanMaxSize)
      */
-    public PagingOverSafetySizeException(String msg, Throwable cause, int safetyMaxResultSize, int allRecordCount) {
-        super(msg);
+    public PagingOverSafetySizeException(String msg, Throwable cause, int safetyMaxResultSize, int allRecordCount)
+        : base(msg)
+    {
         this._safetyMaxResultSize = safetyMaxResultSize;
         this._allRecordCount = allRecordCount;
     }

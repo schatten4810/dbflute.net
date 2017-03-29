@@ -32,8 +32,9 @@ public class SequenceSelectIllegalStateException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SequenceSelectIllegalStateException(String msg) {
-        super(msg);
+    public SequenceSelectIllegalStateException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SequenceSelectIllegalStateException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SequenceSelectIllegalStateException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SequenceSelectIllegalStateException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -33,8 +33,9 @@ public class OptimisticLockColumnValueNullException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public OptimisticLockColumnValueNullException(String msg) {
-        super(msg);
+    public OptimisticLockColumnValueNullException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class OptimisticLockColumnValueNullException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public OptimisticLockColumnValueNullException(String msg, Throwable cause) {
-        super(msg, cause);
+    public OptimisticLockColumnValueNullException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

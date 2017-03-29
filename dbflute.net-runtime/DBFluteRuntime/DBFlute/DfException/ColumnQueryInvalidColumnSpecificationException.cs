@@ -32,8 +32,9 @@ public class ColumnQueryInvalidColumnSpecificationException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ColumnQueryInvalidColumnSpecificationException(String msg) {
-        super(msg);
+    public ColumnQueryInvalidColumnSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ColumnQueryInvalidColumnSpecificationException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ColumnQueryInvalidColumnSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ColumnQueryInvalidColumnSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

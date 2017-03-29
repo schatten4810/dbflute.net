@@ -33,8 +33,9 @@ public class RequiredSpecifyColumnNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public RequiredSpecifyColumnNotFoundException(String msg) {
-        super(msg);
+    public RequiredSpecifyColumnNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class RequiredSpecifyColumnNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public RequiredSpecifyColumnNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public RequiredSpecifyColumnNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

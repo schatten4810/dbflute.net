@@ -32,8 +32,9 @@ public class VaryingUpdateNotFoundCalculationException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public VaryingUpdateNotFoundCalculationException(String msg) {
-        super(msg);
+    public VaryingUpdateNotFoundCalculationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class VaryingUpdateNotFoundCalculationException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public VaryingUpdateNotFoundCalculationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public VaryingUpdateNotFoundCalculationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class CharParameterShortSizeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public CharParameterShortSizeException(String msg) {
-        super(msg);
+    public CharParameterShortSizeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class CharParameterShortSizeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public CharParameterShortSizeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public CharParameterShortSizeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

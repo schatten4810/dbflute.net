@@ -31,8 +31,9 @@ public class EntityPrimaryKeyNotFoundException : RecordHasOverlappedException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public EntityPrimaryKeyNotFoundException(String msg) {
-        super(msg);
+    public EntityPrimaryKeyNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -40,8 +41,9 @@ public class EntityPrimaryKeyNotFoundException : RecordHasOverlappedException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public EntityPrimaryKeyNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public EntityPrimaryKeyNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

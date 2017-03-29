@@ -32,8 +32,9 @@ public class SpecifyColumnAlreadySpecifiedEveryColumnException : RuntimeExceptio
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyColumnAlreadySpecifiedEveryColumnException(String msg) {
-        super(msg);
+    public SpecifyColumnAlreadySpecifiedEveryColumnException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyColumnAlreadySpecifiedEveryColumnException : RuntimeExceptio
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyColumnAlreadySpecifiedEveryColumnException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyColumnAlreadySpecifiedEveryColumnException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

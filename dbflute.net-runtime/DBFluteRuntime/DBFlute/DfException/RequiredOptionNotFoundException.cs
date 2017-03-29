@@ -32,8 +32,9 @@ public class RequiredOptionNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public RequiredOptionNotFoundException(String msg) {
-        super(msg);
+    public RequiredOptionNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class RequiredOptionNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public RequiredOptionNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public RequiredOptionNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

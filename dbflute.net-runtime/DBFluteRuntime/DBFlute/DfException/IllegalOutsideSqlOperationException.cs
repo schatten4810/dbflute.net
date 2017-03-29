@@ -32,8 +32,9 @@ public class IllegalOutsideSqlOperationException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public IllegalOutsideSqlOperationException(String msg) {
-        super(msg);
+    public IllegalOutsideSqlOperationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class IllegalOutsideSqlOperationException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public IllegalOutsideSqlOperationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public IllegalOutsideSqlOperationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

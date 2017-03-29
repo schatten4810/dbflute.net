@@ -33,8 +33,9 @@ public class SpecifyDerivedReferrerPropertyValueNotFoundException : RuntimeExcep
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerPropertyValueNotFoundException(String msg) {
-        super(msg);
+    public SpecifyDerivedReferrerPropertyValueNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class SpecifyDerivedReferrerPropertyValueNotFoundException : RuntimeExcep
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerPropertyValueNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyDerivedReferrerPropertyValueNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

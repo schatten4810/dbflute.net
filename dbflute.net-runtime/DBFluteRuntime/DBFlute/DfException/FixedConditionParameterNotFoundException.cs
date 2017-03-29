@@ -32,8 +32,9 @@ public class FixedConditionParameterNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public FixedConditionParameterNotFoundException(String msg) {
-        super(msg);
+    public FixedConditionParameterNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class FixedConditionParameterNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public FixedConditionParameterNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public FixedConditionParameterNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

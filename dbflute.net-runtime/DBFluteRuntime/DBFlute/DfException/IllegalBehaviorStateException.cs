@@ -32,8 +32,9 @@ public class IllegalBehaviorStateException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public IllegalBehaviorStateException(String msg) {
-        super(msg);
+    public IllegalBehaviorStateException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class IllegalBehaviorStateException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public IllegalBehaviorStateException(String msg, Throwable cause) {
-        super(msg, cause);
+    public IllegalBehaviorStateException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

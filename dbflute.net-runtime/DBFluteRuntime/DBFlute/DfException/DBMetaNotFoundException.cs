@@ -32,8 +32,9 @@ public class DBMetaNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public DBMetaNotFoundException(String msg) {
-        super(msg);
+    public DBMetaNotFoundException(String msg)
+        : base(msg)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class ScalarConditionUnmatchedColumnTypeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ScalarConditionUnmatchedColumnTypeException(String msg) {
-        super(msg);
+    public ScalarConditionUnmatchedColumnTypeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ScalarConditionUnmatchedColumnTypeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ScalarConditionUnmatchedColumnTypeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ScalarConditionUnmatchedColumnTypeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

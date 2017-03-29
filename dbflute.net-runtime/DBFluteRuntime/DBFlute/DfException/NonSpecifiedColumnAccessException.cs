@@ -33,8 +33,9 @@ public class NonSpecifiedColumnAccessException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public NonSpecifiedColumnAccessException(String msg) {
-        super(msg);
+    public NonSpecifiedColumnAccessException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class NonSpecifiedColumnAccessException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public NonSpecifiedColumnAccessException(String msg, Throwable cause) {
-        super(msg, cause);
+    public NonSpecifiedColumnAccessException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class IllegalDBFluteConfigAccessException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public IllegalDBFluteConfigAccessException(String msg) {
-        super(msg);
+    public IllegalDBFluteConfigAccessException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class IllegalDBFluteConfigAccessException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public IllegalDBFluteConfigAccessException(String msg, Throwable cause) {
-        super(msg, cause);
+    public IllegalDBFluteConfigAccessException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class PagingCountSelectNotCountException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public PagingCountSelectNotCountException(String msg) {
-        super(msg);
+    public PagingCountSelectNotCountException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class PagingCountSelectNotCountException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public PagingCountSelectNotCountException(String msg, Throwable cause) {
-        super(msg, cause);
+    public PagingCountSelectNotCountException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

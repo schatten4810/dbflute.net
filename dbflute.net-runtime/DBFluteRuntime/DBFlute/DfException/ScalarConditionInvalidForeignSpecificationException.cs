@@ -32,8 +32,9 @@ public class ScalarConditionInvalidForeignSpecificationException : RuntimeExcept
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ScalarConditionInvalidForeignSpecificationException(String msg) {
-        super(msg);
+    public ScalarConditionInvalidForeignSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ScalarConditionInvalidForeignSpecificationException : RuntimeExcept
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ScalarConditionInvalidForeignSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ScalarConditionInvalidForeignSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

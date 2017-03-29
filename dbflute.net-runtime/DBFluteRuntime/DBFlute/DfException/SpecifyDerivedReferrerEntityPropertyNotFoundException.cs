@@ -32,8 +32,9 @@ public class SpecifyDerivedReferrerEntityPropertyNotFoundException : RuntimeExce
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerEntityPropertyNotFoundException(String msg) {
-        super(msg);
+    public SpecifyDerivedReferrerEntityPropertyNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyDerivedReferrerEntityPropertyNotFoundException : RuntimeExce
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerEntityPropertyNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyDerivedReferrerEntityPropertyNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class EntityAlreadyDeletedException : RuntimeException, EntityBusinessExc
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public EntityAlreadyDeletedException(String msg) {
-        super(msg);
+    public EntityAlreadyDeletedException(String msg)
+        : base(msg)
+    {
     }
 }
 

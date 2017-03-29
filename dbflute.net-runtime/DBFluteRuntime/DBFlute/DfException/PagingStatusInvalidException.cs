@@ -32,8 +32,9 @@ public class PagingStatusInvalidException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public PagingStatusInvalidException(String msg) {
-        super(msg);
+    public PagingStatusInvalidException(String msg)
+        : base(msg)
+    {
     }
 }
 

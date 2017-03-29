@@ -31,8 +31,9 @@ public class EntityDuplicatedException : RecordHasOverlappedException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public EntityDuplicatedException(String msg) {
-        super(msg);
+    public EntityDuplicatedException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -40,8 +41,9 @@ public class EntityDuplicatedException : RecordHasOverlappedException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public EntityDuplicatedException(String msg, Throwable cause) {
-        super(msg, cause);
+    public EntityDuplicatedException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

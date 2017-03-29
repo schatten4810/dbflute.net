@@ -32,8 +32,9 @@ public class SpecifyUpdateColumnInvalidException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyUpdateColumnInvalidException(String msg) {
-        super(msg);
+    public SpecifyUpdateColumnInvalidException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyUpdateColumnInvalidException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyUpdateColumnInvalidException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyUpdateColumnInvalidException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class LikeSearchOptionNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public LikeSearchOptionNotFoundException(String msg) {
-        super(msg);
+    public LikeSearchOptionNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class LikeSearchOptionNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public LikeSearchOptionNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public LikeSearchOptionNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

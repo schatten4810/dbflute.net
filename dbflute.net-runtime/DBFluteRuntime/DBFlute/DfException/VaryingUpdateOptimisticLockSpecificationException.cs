@@ -32,8 +32,9 @@ public class VaryingUpdateOptimisticLockSpecificationException : RuntimeExceptio
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public VaryingUpdateOptimisticLockSpecificationException(String msg) {
-        super(msg);
+    public VaryingUpdateOptimisticLockSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class VaryingUpdateOptimisticLockSpecificationException : RuntimeExceptio
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public VaryingUpdateOptimisticLockSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public VaryingUpdateOptimisticLockSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

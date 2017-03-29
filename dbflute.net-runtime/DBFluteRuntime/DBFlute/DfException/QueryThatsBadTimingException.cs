@@ -33,8 +33,9 @@ public class QueryThatsBadTimingException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public QueryThatsBadTimingException(String msg) {
-        super(msg);
+    public QueryThatsBadTimingException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class QueryThatsBadTimingException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public QueryThatsBadTimingException(String msg, Throwable cause) {
-        super(msg, cause);
+    public QueryThatsBadTimingException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

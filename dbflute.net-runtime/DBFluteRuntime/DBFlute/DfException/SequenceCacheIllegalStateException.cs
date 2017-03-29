@@ -32,8 +32,9 @@ public class SequenceCacheIllegalStateException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SequenceCacheIllegalStateException(String msg) {
-        super(msg);
+    public SequenceCacheIllegalStateException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SequenceCacheIllegalStateException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SequenceCacheIllegalStateException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SequenceCacheIllegalStateException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class VaryingUpdateCalculationUnsupportedColumnTypeException : RuntimeExc
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public VaryingUpdateCalculationUnsupportedColumnTypeException(String msg) {
-        super(msg);
+    public VaryingUpdateCalculationUnsupportedColumnTypeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class VaryingUpdateCalculationUnsupportedColumnTypeException : RuntimeExc
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public VaryingUpdateCalculationUnsupportedColumnTypeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public VaryingUpdateCalculationUnsupportedColumnTypeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

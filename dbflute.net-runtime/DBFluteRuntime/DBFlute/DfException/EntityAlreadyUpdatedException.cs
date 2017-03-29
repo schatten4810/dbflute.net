@@ -43,8 +43,9 @@ public class EntityAlreadyUpdatedException : RuntimeException, EntityBusinessExc
      * @param bean The instance of entity. (NotNull)
      * @param rows The row count returned by update process. (basically zero)
      */
-    public EntityAlreadyUpdatedException(Object bean, int rows) {
-        super("The entity has already been updated: rows=" + rows + ", bean=" + bean, null);
+    public EntityAlreadyUpdatedException(Object bean, int rows)
+        : base("The entity has already been updated: rows=" + rows + ", bean=" + bean, null)
+    {
         _bean = bean;
         _rows = rows;
     }

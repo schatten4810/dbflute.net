@@ -32,8 +32,9 @@ public class QueryDerivedReferrerUnmatchedColumnTypeException : RuntimeException
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public QueryDerivedReferrerUnmatchedColumnTypeException(String msg) {
-        super(msg);
+    public QueryDerivedReferrerUnmatchedColumnTypeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class QueryDerivedReferrerUnmatchedColumnTypeException : RuntimeException
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public QueryDerivedReferrerUnmatchedColumnTypeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public QueryDerivedReferrerUnmatchedColumnTypeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

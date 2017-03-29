@@ -41,8 +41,9 @@ public class SelectedCountExceedMaxCountException : RuntimeException {
      * @param maxCount Max count.
      * @param selectedCount Selected count.
      */
-    public SelectedCountExceedMaxCountException(String msg, int selectedCount, int maxCount) {
-        super(msg);
+    public SelectedCountExceedMaxCountException(String msg, int selectedCount, int maxCount)
+        : base(msg)
+    {
         _selectedCount = selectedCount;
         _maxCount = maxCount;
     }

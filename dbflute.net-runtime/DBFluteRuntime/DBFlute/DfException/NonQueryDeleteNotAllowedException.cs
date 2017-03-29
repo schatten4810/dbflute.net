@@ -32,8 +32,9 @@ public class NonQueryDeleteNotAllowedException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public NonQueryDeleteNotAllowedException(String msg) {
-        super(msg);
+    public NonQueryDeleteNotAllowedException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class NonQueryDeleteNotAllowedException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public NonQueryDeleteNotAllowedException(String msg, Throwable cause) {
-        super(msg, cause);
+    public NonQueryDeleteNotAllowedException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

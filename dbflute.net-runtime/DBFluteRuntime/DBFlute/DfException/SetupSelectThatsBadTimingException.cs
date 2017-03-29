@@ -33,8 +33,9 @@ public class SetupSelectThatsBadTimingException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SetupSelectThatsBadTimingException(String msg) {
-        super(msg);
+    public SetupSelectThatsBadTimingException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class SetupSelectThatsBadTimingException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SetupSelectThatsBadTimingException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SetupSelectThatsBadTimingException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

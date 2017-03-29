@@ -32,8 +32,9 @@ public class OrScopeQueryAndPartUnsupportedOperationException : RuntimeException
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public OrScopeQueryAndPartUnsupportedOperationException(String msg) {
-        super(msg);
+    public OrScopeQueryAndPartUnsupportedOperationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class OrScopeQueryAndPartUnsupportedOperationException : RuntimeException
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public OrScopeQueryAndPartUnsupportedOperationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public OrScopeQueryAndPartUnsupportedOperationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class CommentTerminatorNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public CommentTerminatorNotFoundException(String msg) {
-        super(msg);
+    public CommentTerminatorNotFoundException(String msg)
+        : base(msg)
+    {
     }
 }
 

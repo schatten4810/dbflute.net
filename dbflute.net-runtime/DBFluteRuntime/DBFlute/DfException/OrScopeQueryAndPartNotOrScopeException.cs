@@ -32,8 +32,9 @@ public class OrScopeQueryAndPartNotOrScopeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public OrScopeQueryAndPartNotOrScopeException(String msg) {
-        super(msg);
+    public OrScopeQueryAndPartNotOrScopeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class OrScopeQueryAndPartNotOrScopeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public OrScopeQueryAndPartNotOrScopeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public OrScopeQueryAndPartNotOrScopeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

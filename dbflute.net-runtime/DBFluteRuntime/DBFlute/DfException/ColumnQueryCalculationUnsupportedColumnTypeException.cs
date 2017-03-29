@@ -32,8 +32,9 @@ public class ColumnQueryCalculationUnsupportedColumnTypeException : RuntimeExcep
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ColumnQueryCalculationUnsupportedColumnTypeException(String msg) {
-        super(msg);
+    public ColumnQueryCalculationUnsupportedColumnTypeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ColumnQueryCalculationUnsupportedColumnTypeException : RuntimeExcep
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ColumnQueryCalculationUnsupportedColumnTypeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ColumnQueryCalculationUnsupportedColumnTypeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

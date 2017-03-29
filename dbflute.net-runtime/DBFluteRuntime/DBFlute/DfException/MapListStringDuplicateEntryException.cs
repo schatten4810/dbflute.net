@@ -29,8 +29,9 @@ public class MapListStringDuplicateEntryException : MapListStringParseFailureExc
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public MapListStringDuplicateEntryException(String msg) {
-        super(msg);
+    public MapListStringDuplicateEntryException(String msg)
+        : base(msg)
+    {
     }
 }
 

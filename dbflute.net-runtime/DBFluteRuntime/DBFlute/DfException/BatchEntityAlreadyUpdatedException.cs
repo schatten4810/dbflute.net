@@ -39,8 +39,9 @@ public class BatchEntityAlreadyUpdatedException : EntityAlreadyUpdatedException 
      * @param rows The row count returned by update process. (basically zero)
      * @param batchUpdateCount Batch update count(Total).
      */
-    public BatchEntityAlreadyUpdatedException(Object bean, int rows, Integer batchUpdateCount) {
-        super(bean, rows);
+    public BatchEntityAlreadyUpdatedException(Object bean, int rows, Integer batchUpdateCount)
+        : base (bean, rows)
+    {
         _batchUpdateCount = batchUpdateCount;
     }
 

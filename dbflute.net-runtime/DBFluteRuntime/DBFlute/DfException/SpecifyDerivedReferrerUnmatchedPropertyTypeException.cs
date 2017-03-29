@@ -33,8 +33,9 @@ public class SpecifyDerivedReferrerUnmatchedPropertyTypeException : RuntimeExcep
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerUnmatchedPropertyTypeException(String msg) {
-        super(msg);
+    public SpecifyDerivedReferrerUnmatchedPropertyTypeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class SpecifyDerivedReferrerUnmatchedPropertyTypeException : RuntimeExcep
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerUnmatchedPropertyTypeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyDerivedReferrerUnmatchedPropertyTypeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

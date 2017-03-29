@@ -18,7 +18,7 @@ using DBFlute.JavaLike.Time;
 using DBFlute.JavaLike.Util;
 
 using RuntimeException = System.ApplicationException;
-using Throwable = System.Exception;
+using ClassCastException = System.InvalidCastException;
 
 namespace DBFlute.DfException {
 
@@ -32,8 +32,9 @@ public class MappingClassCastException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public MappingClassCastException(String msg) {
-        super(msg);
+    public MappingClassCastException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class MappingClassCastException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param e Exception about class cast. (NotNull)
      */
-    public MappingClassCastException(String msg, ClassCastException e) {
-        super(msg, e);
+    public MappingClassCastException(String msg, ClassCastException e)
+        : base(msg, e)
+    {
     }
 }
 

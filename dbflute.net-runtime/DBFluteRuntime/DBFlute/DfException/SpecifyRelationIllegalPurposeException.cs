@@ -32,8 +32,9 @@ public class SpecifyRelationIllegalPurposeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyRelationIllegalPurposeException(String msg) {
-        super(msg);
+    public SpecifyRelationIllegalPurposeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyRelationIllegalPurposeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyRelationIllegalPurposeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyRelationIllegalPurposeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

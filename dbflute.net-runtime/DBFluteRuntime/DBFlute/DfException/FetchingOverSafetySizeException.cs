@@ -39,8 +39,9 @@ public class FetchingOverSafetySizeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      */
-    public FetchingOverSafetySizeException(String msg, int safetyMaxResultSize) {
-        super(msg);
+    public FetchingOverSafetySizeException(String msg, int safetyMaxResultSize)
+        : base(msg)
+    {
         this._safetyMaxResultSize = safetyMaxResultSize;
     }
 
@@ -50,8 +51,9 @@ public class FetchingOverSafetySizeException : RuntimeException {
      * @param cause Throwable. (NullAllowed)
      * @param safetyMaxResultSize The max size of safety result. (NotZero, ZotMinus)
      */
-    public FetchingOverSafetySizeException(String msg, Throwable cause, int safetyMaxResultSize) {
-        super(msg, cause);
+    public FetchingOverSafetySizeException(String msg, Throwable cause, int safetyMaxResultSize)
+        : base(msg, cause)
+    {
         this._safetyMaxResultSize = safetyMaxResultSize;
     }
 

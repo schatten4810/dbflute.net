@@ -28,8 +28,9 @@ namespace DBFlute.DfException {
  */
 public class ParseDateExpressionFailureException : RuntimeException {
 
-    public ParseDateExpressionFailureException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ParseDateExpressionFailureException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

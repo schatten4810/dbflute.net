@@ -32,8 +32,9 @@ public class AccessContextNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public AccessContextNotFoundException(String msg) {
-        super(msg);
+    public AccessContextNotFoundException(String msg) 
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class AccessContextNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public AccessContextNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public AccessContextNotFoundException(String msg, Throwable cause) 
+        : base (msg, cause)
+    {
     }
 }
 

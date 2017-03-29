@@ -33,8 +33,9 @@ public class RecordHasOverlappedException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public RecordHasOverlappedException(String msg) {
-        super(msg);
+    public RecordHasOverlappedException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -42,8 +43,9 @@ public class RecordHasOverlappedException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public RecordHasOverlappedException(String msg, Throwable cause) {
-        super(msg, cause);
+    public RecordHasOverlappedException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class ClassificationNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ClassificationNotFoundException(String msg) {
-        super(msg);
+    public ClassificationNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ClassificationNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ClassificationNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ClassificationNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class QueryIllegalPurposeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public QueryIllegalPurposeException(String msg) {
-        super(msg);
+    public QueryIllegalPurposeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class QueryIllegalPurposeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public QueryIllegalPurposeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public QueryIllegalPurposeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

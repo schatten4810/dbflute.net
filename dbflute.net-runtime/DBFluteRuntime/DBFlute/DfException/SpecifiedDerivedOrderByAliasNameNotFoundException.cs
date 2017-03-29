@@ -32,8 +32,9 @@ public class SpecifiedDerivedOrderByAliasNameNotFoundException : RuntimeExceptio
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifiedDerivedOrderByAliasNameNotFoundException(String msg) {
-        super(msg);
+    public SpecifiedDerivedOrderByAliasNameNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifiedDerivedOrderByAliasNameNotFoundException : RuntimeExceptio
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifiedDerivedOrderByAliasNameNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifiedDerivedOrderByAliasNameNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

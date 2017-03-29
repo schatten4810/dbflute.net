@@ -31,8 +31,9 @@ public class SelectEntityConditionNotFoundException : RecordHasOverlappedExcepti
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SelectEntityConditionNotFoundException(String msg) {
-        super(msg);
+    public SelectEntityConditionNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -40,8 +41,9 @@ public class SelectEntityConditionNotFoundException : RecordHasOverlappedExcepti
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SelectEntityConditionNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SelectEntityConditionNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

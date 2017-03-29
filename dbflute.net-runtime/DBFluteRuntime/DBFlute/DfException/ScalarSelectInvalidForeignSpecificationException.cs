@@ -32,8 +32,9 @@ public class ScalarSelectInvalidForeignSpecificationException : RuntimeException
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ScalarSelectInvalidForeignSpecificationException(String msg) {
-        super(msg);
+    public ScalarSelectInvalidForeignSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ScalarSelectInvalidForeignSpecificationException : RuntimeException
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ScalarSelectInvalidForeignSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ScalarSelectInvalidForeignSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

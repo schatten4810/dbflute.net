@@ -32,8 +32,9 @@ public class SetupSelectAfterUnionException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SetupSelectAfterUnionException(String msg) {
-        super(msg);
+    public SetupSelectAfterUnionException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SetupSelectAfterUnionException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SetupSelectAfterUnionException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SetupSelectAfterUnionException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

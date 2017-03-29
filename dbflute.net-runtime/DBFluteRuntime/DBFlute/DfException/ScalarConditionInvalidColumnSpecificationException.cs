@@ -32,8 +32,9 @@ public class ScalarConditionInvalidColumnSpecificationException : RuntimeExcepti
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ScalarConditionInvalidColumnSpecificationException(String msg) {
-        super(msg);
+    public ScalarConditionInvalidColumnSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ScalarConditionInvalidColumnSpecificationException : RuntimeExcepti
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ScalarConditionInvalidColumnSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ScalarConditionInvalidColumnSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

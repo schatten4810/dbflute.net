@@ -32,8 +32,9 @@ public class PluginValueTypeNotFoundException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public PluginValueTypeNotFoundException(String msg) {
-        super(msg);
+    public PluginValueTypeNotFoundException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class PluginValueTypeNotFoundException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public PluginValueTypeNotFoundException(String msg, Throwable cause) {
-        super(msg, cause);
+    public PluginValueTypeNotFoundException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

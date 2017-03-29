@@ -32,8 +32,9 @@ public class BatchUpdateColumnModifiedPropertiesFragmentedException : RuntimeExc
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public BatchUpdateColumnModifiedPropertiesFragmentedException(String msg) {
-        super(msg);
+    public BatchUpdateColumnModifiedPropertiesFragmentedException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class BatchUpdateColumnModifiedPropertiesFragmentedException : RuntimeExc
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public BatchUpdateColumnModifiedPropertiesFragmentedException(String msg, Throwable cause) {
-        super(msg, cause);
+    public BatchUpdateColumnModifiedPropertiesFragmentedException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

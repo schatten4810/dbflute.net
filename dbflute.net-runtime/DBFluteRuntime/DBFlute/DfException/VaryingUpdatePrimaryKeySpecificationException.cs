@@ -32,8 +32,9 @@ public class VaryingUpdatePrimaryKeySpecificationException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public VaryingUpdatePrimaryKeySpecificationException(String msg) {
-        super(msg);
+    public VaryingUpdatePrimaryKeySpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class VaryingUpdatePrimaryKeySpecificationException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public VaryingUpdatePrimaryKeySpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public VaryingUpdatePrimaryKeySpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

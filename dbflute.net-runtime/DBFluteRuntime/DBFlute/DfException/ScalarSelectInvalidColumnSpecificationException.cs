@@ -32,8 +32,9 @@ public class ScalarSelectInvalidColumnSpecificationException : RuntimeException 
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ScalarSelectInvalidColumnSpecificationException(String msg) {
-        super(msg);
+    public ScalarSelectInvalidColumnSpecificationException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ScalarSelectInvalidColumnSpecificationException : RuntimeException 
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ScalarSelectInvalidColumnSpecificationException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ScalarSelectInvalidColumnSpecificationException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

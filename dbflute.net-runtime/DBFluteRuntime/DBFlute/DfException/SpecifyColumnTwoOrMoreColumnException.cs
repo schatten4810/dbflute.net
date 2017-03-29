@@ -32,8 +32,9 @@ public class SpecifyColumnTwoOrMoreColumnException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyColumnTwoOrMoreColumnException(String msg) {
-        super(msg);
+    public SpecifyColumnTwoOrMoreColumnException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyColumnTwoOrMoreColumnException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyColumnTwoOrMoreColumnException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyColumnTwoOrMoreColumnException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

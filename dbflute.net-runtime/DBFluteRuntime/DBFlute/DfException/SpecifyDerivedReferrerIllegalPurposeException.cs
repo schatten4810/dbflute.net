@@ -32,8 +32,9 @@ public class SpecifyDerivedReferrerIllegalPurposeException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerIllegalPurposeException(String msg) {
-        super(msg);
+    public SpecifyDerivedReferrerIllegalPurposeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyDerivedReferrerIllegalPurposeException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerIllegalPurposeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyDerivedReferrerIllegalPurposeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

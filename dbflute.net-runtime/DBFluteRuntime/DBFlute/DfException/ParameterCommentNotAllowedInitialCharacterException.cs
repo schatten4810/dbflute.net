@@ -32,8 +32,9 @@ public class ParameterCommentNotAllowedInitialCharacterException : RuntimeExcept
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ParameterCommentNotAllowedInitialCharacterException(String msg) {
-        super(msg);
+    public ParameterCommentNotAllowedInitialCharacterException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ParameterCommentNotAllowedInitialCharacterException : RuntimeExcept
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ParameterCommentNotAllowedInitialCharacterException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ParameterCommentNotAllowedInitialCharacterException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

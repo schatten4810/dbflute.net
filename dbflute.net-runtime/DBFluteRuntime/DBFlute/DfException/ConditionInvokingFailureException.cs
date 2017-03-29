@@ -32,8 +32,9 @@ public class ConditionInvokingFailureException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public ConditionInvokingFailureException(String msg) {
-        super(msg);
+    public ConditionInvokingFailureException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class ConditionInvokingFailureException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public ConditionInvokingFailureException(String msg, Throwable cause) {
-        super(msg, cause);
+    public ConditionInvokingFailureException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

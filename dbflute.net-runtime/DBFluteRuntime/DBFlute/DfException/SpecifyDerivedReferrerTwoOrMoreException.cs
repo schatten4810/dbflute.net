@@ -32,8 +32,9 @@ public class SpecifyDerivedReferrerTwoOrMoreException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerTwoOrMoreException(String msg) {
-        super(msg);
+    public SpecifyDerivedReferrerTwoOrMoreException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyDerivedReferrerTwoOrMoreException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyDerivedReferrerTwoOrMoreException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyDerivedReferrerTwoOrMoreException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

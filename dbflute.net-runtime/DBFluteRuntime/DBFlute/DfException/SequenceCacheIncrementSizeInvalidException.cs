@@ -32,8 +32,9 @@ public class SequenceCacheIncrementSizeInvalidException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SequenceCacheIncrementSizeInvalidException(String msg) {
-        super(msg);
+    public SequenceCacheIncrementSizeInvalidException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SequenceCacheIncrementSizeInvalidException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SequenceCacheIncrementSizeInvalidException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SequenceCacheIncrementSizeInvalidException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

@@ -32,8 +32,9 @@ public class SpecifyColumnNotSetupSelectColumnException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SpecifyColumnNotSetupSelectColumnException(String msg) {
-        super(msg);
+    public SpecifyColumnNotSetupSelectColumnException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SpecifyColumnNotSetupSelectColumnException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SpecifyColumnNotSetupSelectColumnException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SpecifyColumnNotSetupSelectColumnException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

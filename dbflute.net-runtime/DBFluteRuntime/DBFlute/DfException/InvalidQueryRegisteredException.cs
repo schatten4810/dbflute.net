@@ -32,8 +32,9 @@ public class InvalidQueryRegisteredException : RuntimeException {
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public InvalidQueryRegisteredException(String msg) {
-        super(msg);
+    public InvalidQueryRegisteredException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class InvalidQueryRegisteredException : RuntimeException {
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public InvalidQueryRegisteredException(String msg, Throwable cause) {
-        super(msg, cause);
+    public InvalidQueryRegisteredException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 

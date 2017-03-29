@@ -32,8 +32,9 @@ public class SequenceCacheSizeNotDividedIncrementSizeException : RuntimeExceptio
      * Constructor.
      * @param msg The message of the exception. (NotNull)
      */
-    public SequenceCacheSizeNotDividedIncrementSizeException(String msg) {
-        super(msg);
+    public SequenceCacheSizeNotDividedIncrementSizeException(String msg)
+        : base(msg)
+    {
     }
 
     /**
@@ -41,8 +42,9 @@ public class SequenceCacheSizeNotDividedIncrementSizeException : RuntimeExceptio
      * @param msg The message of the exception. (NotNull)
      * @param cause The cause of the exception. (NotNull)
      */
-    public SequenceCacheSizeNotDividedIncrementSizeException(String msg, Throwable cause) {
-        super(msg, cause);
+    public SequenceCacheSizeNotDividedIncrementSizeException(String msg, Throwable cause)
+        : base(msg, cause)
+    {
     }
 }
 
